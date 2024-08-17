@@ -65,7 +65,7 @@ export default function Home() {
           className="flex bg-[#151419] justify-center items-center border-b-[2px] border-solid border-[#303030]"
         >
           <h1 className="text-[#ca6b12] text-[24px] font-medium">
-            RocketNotes
+            SharkNotes
           </h1>
         </div>
         <Header />
@@ -90,7 +90,7 @@ export default function Home() {
             ))}
         </ul>
 
-        <div id="Search" className="pt-[50px] px-[25px] z-10 mb-10">
+        <div id="Search" className="pt-[30px] px-[25px] z-10 mb-2">
           <Input
             icon={RiSearchLine}
             onChange={(e) => setSearch(e.target.value)}
@@ -99,7 +99,7 @@ export default function Home() {
 
         <div
           id="Content"
-          className="mx-[25px] mt-[-50px] overflow-y-auto"
+          className="mx-[25px] mt-[-80px] overflow-y-auto"
         >
           <Section title="Minhas notas">
             {
