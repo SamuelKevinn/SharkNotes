@@ -83,8 +83,8 @@ button:hover {
     }
 
     #Search {
-        margin-top: -20px;
-        margin-bottom: 20px;
+        margin-top: px;
+        margin-bottom: 50px;
         position: relative;
     }
 
@@ -95,8 +95,8 @@ button:hover {
     #NewNotes {
 
         height: 70px;
-        position: absolute;
-        bottom: 0;
+        position: fixed;
+        bottom: 1px;
 
     }
 
