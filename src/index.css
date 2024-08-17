@@ -64,28 +64,38 @@ button:hover {
 }
 
 @media (max-width: 768px) {
-    
+
     #Search {
-            margin-top: -20px;
-            margin-bottom: 20px;
-        }
+        margin-top: -20px;
+        margin-bottom: 20px;
+        position: relative;
+    }
 
     #Menu {
         display: none;
     }
 
     #NewNotes {
-        margin-top: 113px;
+
         height: 70px;
         position: absolute;
-   }
+        bottom: 0;
 
-   #Brand {
-    padding: 10px 0;
-   }
+    }
+
+    #Content {
+        overflow-y: scroll;
+        height: 410px;
+
+        border-radius: 5px;
+    }
+
+    #Brand {
+        padding: 10px 0;
+    }
 }
 
-@media (min-width: 420px) {
+@media (min-width: 768px) {
 
 
 
