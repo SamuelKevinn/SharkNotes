@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useAuth } from "../../hooks/auth";
 import avatarPlaceholder from "../../assets/undefined-avatar.svg";
-import api from "../../services/api"
+import { api } from "../../services/api"
 import { RiShutDownLine } from "react-icons/ri";
 import { Link, useNavigate } from "react-router-dom";
 import React from "react";
