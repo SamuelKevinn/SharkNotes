@@ -2,7 +2,7 @@ import React from "react";
 
 import { useState, useEffect } from "react";
 
-import { api } from "../../../../../api/src/service/api";
+import { api } from "../../services/api";
 
 import ButtonText from "../../components/ButtonText/ButtonText";
 import Section from "../../components/Section/Section";

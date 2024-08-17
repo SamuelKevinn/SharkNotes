@@ -4,7 +4,7 @@ import { FiLock, FiMail, FiUser } from "react-icons/fi";
 
 import { Link, useNavigate } from "react-router-dom";
 
-import { api } from "../../../../../api/src/service/api";
+import { api } from "../../services/api";
 
 import Input from "../../components/Input";
 

@@ -6,7 +6,7 @@ import Input from "../../components/Input";
 import Button from "../../components/Button/Button";
 
 import avatarPlaceholder from "../../assets/undefined-avatar.svg"
-import { api } from "../../../../../api/src/service/api";
+import { api } from "../../services/api";
 
 import { Link } from "react-router-dom";
 

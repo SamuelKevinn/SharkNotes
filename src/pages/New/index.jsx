@@ -3,7 +3,7 @@ import { useState } from "react"
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 
-import { api } from "../../../../../api/src/service/api"
+import { api } from "../../services/api";
 
 import Header from "../../components/Header/Header";
 import Input from "../../components/Input";

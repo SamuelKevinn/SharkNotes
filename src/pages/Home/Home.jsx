@@ -10,7 +10,7 @@ import ButtonText from "../../components/ButtonText/ButtonText";
 import Input from "../../components/Input";
 import Section from "../../components/Section/Section";
 import Note from "../../components/Note";
-import { api } from "../../../../../api/src/service/api";
+import { api } from "../../services/api";
 
 export default function Home() {
   const [search, setSearch] = useState("")
