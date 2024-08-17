@@ -8,7 +8,7 @@ export default function Note({ data, ...rest }) {
           {...rest}
           className="w-[100%]  bg-[#343444] hover:bg-[#2a2a36] rounded-xl border-none p-[22px] mb-[16px]"
         >
-          <h1 className="flex-1 text-left font-bold text-[24px text-white">
+          <h1 className="flex-1 text-left font-bold text-xl text-white">
             {data.title}
           </h1>
 

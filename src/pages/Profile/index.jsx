@@ -1,11 +1,10 @@
-
 import { useState } from "react";
 import { useAuth } from "../../hooks/auth";
 
 import Input from "../../components/Input";
 import Button from "../../components/Button/Button";
 
-import avatarPlaceholder from "../../assets/undefined-avatar.svg"
+import avatarPlaceholder from "../../assets/undefined-avatar.svg";
 import { api } from "../../services/api";
 
 import { Link } from "react-router-dom";
@@ -26,9 +25,11 @@ export default function Profile() {
   const [passwordOld, setPasswordOld] = useState();
   const [passwordNew, setPasswordNew] = useState();
 
-  const avatarUrl = user.avatar ? `${api.defaults.baseURL}/files/${user.avatar}` : avatarPlaceholder
-  const [avatar, setAvatar] = useState(user.avatarUrl)
-  const [avatarFile, setAvatarFile] = useState(null)
+  const avatarUrl = user.avatar
+    ? `${api.defaults.baseURL}/files/${user.avatar}`
+    : avatarPlaceholder;
+  const [avatar, setAvatar] = useState(user.avatarUrl);
+  const [avatarFile, setAvatarFile] = useState(null);
 
   async function handleUpdate() {
     const updated = {
@@ -38,18 +39,18 @@ export default function Profile() {
       old_password: passwordOld,
     };
 
-    const userUpdated = Object.assign(user, updated)
-    
+    const userUpdated = Object.assign(user, updated);
+
     await updateProfile({ user: userUpdated, avatarFile });
-    alert("Dados atualizados com sucesso")
+    alert("Dados atualizados com sucesso");
   }
 
   async function handleChangeAvatar(event) {
     const file = event.target.files[0];
-    setAvatarFile(file)
+    setAvatarFile(file);
 
-    const imagePreview = URL.createObjectURL(file)
-    setAvatar(imagePreview)
+    const imagePreview = URL.createObjectURL(file);
+    setAvatar(imagePreview);
   }
 
   return (
@@ -60,9 +61,12 @@ export default function Profile() {
         </Link>
       </header>
       <div className="max-w-[100%] flex justify-center">
-        <div id="forms" className="mt-[px] w-[340px]">
-          <div id="avatar" className="mb-[25px] mt-[-90px]">
-            <div className="flex justify-center">
+        <div id="forms" className="mt-[px] w-[340px] ">
+          <div
+            id="avatar"
+            className="ml-[80px] mb-[25px] mt-[-90px] rounded-full w-[186px] "
+          >
+            <div className="flex justify-center rounded-full w-[186px]">
               <img
                 src={avatarUrl}
                 alt="Foto do Usuário"
@@ -115,7 +119,7 @@ export default function Profile() {
             onChange={(e) => setPasswordNew(e.target.value)}
           />
           <div className="mt-5">
-            <Button title="Salvar" onClick={handleUpdate}/>
+            <Button title="Salvar" onClick={handleUpdate} />
           </div>
         </div>
       </div>

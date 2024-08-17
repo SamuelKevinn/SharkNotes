@@ -50,12 +50,15 @@ export default function SignUp() {
         />
       </div>
 
-      <Form onSubmit={handleSignUp}>
+      <Form
+        onSubmit={handleSignUp}
+        className="px-[69.6px] lg:px-[136px] md:px-[70px] flex flex-col  justify-center items-center text-center"
+      >
         <h1 className="text-[45px] text-[#ca6b12] font-bold">
-          RocketNotes
+          SharkNotes
         </h1>
 
-        <p className="text-[14px] text-[#aeaeae] w-[329px]">
+        <p className="text-[14px] text-[#aeaeae] ">
           Aplicação para salvar e gerenciar seus links úteis.
         </p>
 

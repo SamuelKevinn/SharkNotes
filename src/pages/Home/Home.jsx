@@ -90,7 +90,7 @@ export default function Home() {
             ))}
         </ul>
 
-        <div id="Search" className="pt-[50px] px-[50px] z-10 mb-10">
+        <div id="Search" className="pt-[50px] px-[25px] z-10 mb-10">
           <Input
             icon={RiSearchLine}
             onChange={(e) => setSearch(e.target.value)}
@@ -99,7 +99,7 @@ export default function Home() {
 
         <div
           id="Content"
-          className="mx-[50px] mt-[-50px] overflow-y-auto"
+          className="mx-[25px] mt-[-50px] overflow-y-auto"
         >
           <Section title="Minhas notas">
             {
@@ -116,10 +116,10 @@ export default function Home() {
 
         <Link to="/new">
           <button
-            className="flex items-center justify-center font-bold h-full"
+            className="flex items-center justify-center font-bold h-full "
             id="NewNotes"
           >
-            <span className="mr-[8px] text-[17px] p-[px]">
+            <span className="mr-[8px] text-[17px] pt-[px] ">
               <RiAddLargeFill />
             </span>
             Criar nota

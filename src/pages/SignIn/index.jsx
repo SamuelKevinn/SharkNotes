@@ -29,11 +29,11 @@ export default function SignIn() {
     <div className="h-[100vh] flex items-stretch">
       <Form
         id="Forms"
-        className="px-[120px] flex flex-col justify-center items-center text-center"
+        className="px-[80px] lg:px-[136px] md:px-[70px]  flex flex-col  justify-center items-center text-center"
         onSubmit={handleSignIn}
       >
         <h1 className="text-[45px] text-[#ca6b12] font-bold">
-          RocketNotes
+          SharkNotes
         </h1>
 
         <p className="text-[14px] text-[#aeaeae]">
