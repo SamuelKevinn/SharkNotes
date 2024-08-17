@@ -41,20 +41,23 @@ export default function SignUp() {
   }
 
   return (
-    <div className="h-[100vh] flex items-stretch">
-      <div className="w-[100%] bg-no-repeat bg-[#1c1a22] bg-cover">
+    <div id="SignBox" className="h-[100vh] flex items-stretch">
+      <div
+        id="backgroundImage"
+        className="w-[] bg-no-repeat bg-[#1c1a22] bg-cover"
+      >
         <img
           src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?ixid=M3wzOTE5Mjl8MHwxfHNlYXJjaHwxMXx8Y291cnNlc3xlbnwwfHx8fDE3MDYzMzEwMDZ8MA&ixlib=rb-4.0.3&auto=format&fit=crop&w=600"
           alt="Imagem de fundo"
-          className="w-[100%] bg-no-repeat object-cover opacity-20 h-[100vh]"
+          className="w-[] bg-no-repeat object-cover opacity-20 h-[100vh]"
         />
       </div>
 
       <Form
         onSubmit={handleSignUp}
-        className="px-[69.6px] lg:px-[136px] md:px-[70px] flex flex-col  justify-center items-center text-center"
+        className="px-[69.6px] lg:px-[136px] md:px-[70px] flex flex-col  mx-auto justify-center items-center text-center"
       >
-        <h1 className="text-[45px] text-[#ca6b12] font-bold">
+        <h1 translate="no" className="text-[45px] text-[#ca6b12] font-bold">
           SharkNotes
         </h1>
 

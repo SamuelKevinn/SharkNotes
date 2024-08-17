@@ -9,6 +9,10 @@
 
 }
 
+#SiteIMG {
+    border-radius: 100%;
+}
+
 body::-webkit-scrollbar {
     display: none;
 }
@@ -64,6 +68,19 @@ button:hover {
 }
 
 @media (max-width: 768px) {
+    
+    #SignBox {
+        
+
+      
+       
+    }
+
+    #backgroundImage {
+        
+       display: none;
+       
+    }
 
     #Search {
         margin-top: -20px;
