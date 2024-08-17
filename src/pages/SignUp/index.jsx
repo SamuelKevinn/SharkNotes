@@ -44,7 +44,7 @@ export default function SignUp() {
     <div className="h-[100vh] flex items-stretch">
       <div className="w-[100%] bg-no-repeat bg-[#1c1a22] bg-cover">
         <img
-          src="src/assets/background.png"
+          src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?ixid=M3wzOTE5Mjl8MHwxfHNlYXJjaHwxMXx8Y291cnNlc3xlbnwwfHx8fDE3MDYzMzEwMDZ8MA&ixlib=rb-4.0.3&auto=format&fit=crop&w=600"
           alt="Imagem de fundo"
           className="w-[100%] bg-no-repeat object-cover opacity-20 h-[100vh]"
         />
