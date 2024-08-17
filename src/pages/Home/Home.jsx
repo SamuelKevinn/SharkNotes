@@ -64,11 +64,11 @@ export default function Home() {
           id="Brand"
           className="flex bg-[#151419] justify-center items-center border-b-[2px] border-solid border-[#303030]"
         >
-          <h1 className="text-[#ca6b12] text-[24px] font-medium">
+          <h1 translate="no" className="text-[#ca6b12] text-[24px] font-medium">
             SharkNotes
           </h1>
         </div>
-        <Header />
+        <Header/>
 
         <ul id="Menu" className="bg-[#151419] text-center">
           <li className="pt-[50px]">
