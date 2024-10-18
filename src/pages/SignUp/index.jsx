@@ -57,7 +57,10 @@ export default function SignUp() {
         onSubmit={handleSignUp}
         className="px-[69.6px] lg:px-[136px] md:px-[70px] flex flex-col  mx-auto justify-center items-center text-center"
       >
-        <h1 translate="no" className="text-[45px] text-[#ca6b12] font-bold">
+        <h1
+          translate="no"
+          className="text-[45px] text-[#ca6b12] font-bold"
+        >
           SharkNotes
         </h1>
 
@@ -107,7 +110,10 @@ export default function SignUp() {
           ></Button>
         </div>
 
-        <Link to="/" className="mt-[50px] text-[#ca6b12]">
+        <Link
+          to="/"
+          className="mt-[50px] text-[#e28228] hover:text-[#e28228]"
+        >
           Voltar para o login
         </Link>
       </Form>
